@@ -1,0 +1,89 @@
+.tweet {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	border: 1px solid #ccc;
+	padding: 10px;
+/* 
+    更改字体和字号。
+    在 .tweet 选择器上设置的 CSS 效果，其所有子元素都会继承。
+    （除了按钮。按钮不太合群）
+  */
+font-family: Helvetica,
+Arial,
+sans-serif;
+font-size: 14px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.handle,
+.time {
+    color: #657786;
+}
+
+.content {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.avatar {
+     margin-right: 10px;
+     width: 48px;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+}
+
+.actions {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0;
+	/* justify-content: left; */
+}
+
+.actions li {
+	list-style: none;
+	margin-right: 30px;
+}
+
+p,
+ul {
+    margin: 0;
+}
+
+.author-meta,
+p {
+    margin-bottom: 1em;
+}
+
+
+.handle::after {
+    content: " \00b7";
+}
+
+
+
+.actions div {
+    border: none;
+    color: #657786;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.actions div:hover {
+    color: #1da1f2;
+}

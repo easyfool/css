@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <style>
+        .tweet {
+            display: flex;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            padding: 10px;
+            /*
+            更改字体和字号。
+            在 .tweet 选择器上设置的 CSS 效果，其所有子元素都会继承。
+            （除了按钮。按钮不太合群）
+            */
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .name {
+            font-weight: 600;
+        }
+
+        .handle,
+        .time {
+            color: #657786;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .avatar {
+            margin-right: 10px;
+            width: 48px;
+            border-radius: 50%;
+        }
+
+        .actions {
+            display: flex;
+            padding: 0;
+        }
+
+        .actions li {
+            list-style: none;
+            margin-right: 30px;
+        }
+
+        p,
+        ul {
+            margin: 0;
+        }
+
+        .author-meta,
+        p {
+            margin-bottom: 1em;
+        }
+
+        .handle::after {
+            content: " \00b7";
+        }
+
+        .actions button {
+            border: none;
+            color: #657786;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .actions button:hover {
+            color: #1da1f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <article class="tweet">
+        <img class="avatar" src="http://www.gravatar.com/avatar" />
+        <div class="content">
+            <div class="author-meta">
+                <span>@handle</span>
+                <span class="handle">Name</span>
+                <span class="time">3 Hour Ago</span>
+            <p>Some insightful message</p>
+            <ul class="actions">
+                <li>
+                    <button>
+                        <i class="fas fa-reply" aria-hidden="true"></i>
+                        <span class="sr-only">Reply</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-retweet" aria-hidden="true"></i>
+                        <span class="sr-only">Retweet</span></button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                        <span class="sr-only">Like</span></button>
+                </li>
+                <li> <button>
+                        <span aria-hidden="true">...</span>
+                        <span class="sr-only">More Actions</span></button>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+</body>
+
+</html>

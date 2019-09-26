@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>动手实现tweeter组件</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="tweeter.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous" />
+	</head>
+
+	<body>
+		<article class="tweet">
+			<img class="avatar" src="http://www.gravatar.com/avatar" alt="Name" />
+			<div class="content">
+				<div class="author-meta">
+					<span class="handle">@handle</span>
+					<span class="name">Name</span>
+					<span class="time">3h ago</span>
+				</div>
+				<p>Some insightful message.</p>
+				<ul class="actions">
+					 <li>
+					     <div>
+					         <i class="fas fa-reply" aria-hidden="true"></i>
+					         <span class="sr-only">Reply</span>
+					     </div>
+					 </li>
+					 <li>
+					     <div>
+					         <i class="fas fa-retweet" aria-hidden="true"></i>
+					         <span class="sr-only">Retweet</span>
+					     </div>
+					 </li>
+					 <li>
+					     <div>
+					         <i class="fas fa-heart" aria-hidden="true"></i>
+					         <span class="sr-only">Like</span>
+					     </div>
+					 </li>
+					 <li>
+					     <div>
+					         <span aria-hidden="true">...</span>
+					         <span class="sr-only">More Actions</span>
+					     </div>
+					 </li>
+				</ul>
+			</div>
+		</article>
+	</body>
+</html>
